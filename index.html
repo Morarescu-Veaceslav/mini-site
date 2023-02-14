@@ -14,9 +14,9 @@
         <h1>Welcome Home</h1>
         <ul>
           <li id="selected"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about_container">About Us</a></li>
+          <li><a href="#projects_container">Projects</a></li>
+          <li><a href="#form">Contact</a></li>
         </ul>
       </nav>
       <div id="nav_img"></div>
@@ -44,6 +44,57 @@
           itaque fugiat dolorem sed beatae architecto officiis qui soluta quos,
           et cumque est.
         </p>
+      </div>
+    </div>
+    <div id="projects_container">
+      <div id="projects_title"><h1>New projects for you</h1></div>
+      <div class="projects_img first"></div>
+      <div class="projects_img second"></div>
+      <div class="projects_img third"></div>
+    </div>
+    <div id="form">
+      <div id="form_container">
+        <h1>Contact Form</h1>
+        <h4>Please contact us for more options</h4>
+        <form action="#" method="post" id="contact">
+          <input
+            type="text"
+            name="nume"
+            placeholder="Name and Surname"
+            tabindex="1"
+            required
+            autofocus
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            tabindex="2"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            tabindex="3"
+            required
+          />
+          <input
+            type="url"
+            name="site"
+            placeholder="Web Site"
+            tabindex="4"
+            required
+          />
+          <textarea
+            name="message"
+            name="message"
+            placeholder="Your message..."
+            tabindex="5"
+            required
+          ></textarea>
+          <button name="submit" type="submit" id="contact-submit">Send</button>
+        </form>
       </div>
     </div>
   </body>

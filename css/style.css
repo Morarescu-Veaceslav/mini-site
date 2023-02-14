@@ -24,6 +24,7 @@ html, body{
    background-repeat: no-repeat;
    background-size: 100% 100%;
    background-position: center;
+   box-shadow: 2px 2px 4px #777575;
 
 }
 
@@ -95,6 +96,7 @@ nav ul li a{
     font-style: italic;
     font-weight: 700;
     text-align: center;
+    padding: 25px 50px;
     font-size: 17px;
 
 }
@@ -115,6 +117,7 @@ nav ul li a{
    background-repeat: no-repeat;
    background-size: 100% 100%;
    background-position: center;
+   box-shadow: 2px 2px 4px #777575;
 }
 
 #about_content{
@@ -130,7 +133,7 @@ nav ul li a{
     font-weight: normal;
     font-style: italic;
     text-shadow: 2px 2px 4px #777575;
-    border-bottom: 1px solid #696868;
+    border-bottom: 2px solid rgb(29, 176, 159);
     margin:0px 20px;
 }
 
@@ -142,6 +145,131 @@ nav ul li a{
     margin:15px 35px;
 }
 
+/* projects container */
+
+#projects_container{
+    background-color: rgb(236, 238, 240);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 300px;
+    padding-top: 200px;
+}
+
+#projects_title{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #777575;
+}
+
+.projects_img{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+    box-shadow: 2px 2px 4px #777575;
+    background-size: 100% 100%;
+}
+.first{
+    background-image: url("../img/project1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.second{
+    background-image: url("../img/project2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third{
+    background-image: url("../img/project3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Formular de Contact */
+
+#form{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#form_container{
+    width: 700px;
+    height: auto;
+    margin: 30px auto;
+    background-color: rgb(236, 238, 240);
+    border: 1px solid #afadad;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #777575;
+}
+
+#form_container h1, h4{
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #777575;
+    text-align: center;
+}
+
+#form_container input,
+#form_container textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  resize: none;
+}
+
+#form_container button {
+    width: 70%;
+    margin-left: 100px;
+    background-color: #25a02b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+#form_container button:hover{
+    background-color: #09ae11;
+}
+
+#form_container button:active{
+    border: 1px solid #388b3c;
+    box-shadow: 0 0 20px 0 rgba(40, 164, 63, 0.397), 0 5px 5px 0 rgba(26, 137, 54, 0.386);
+}
+
+#form_container input:focus,
+#form_container textarea:focus{
+    outline: 0;
+    border: 1px solid rgb(171, 169, 171);
+    box-shadow: 2px 2px 4px #777575;
+}
+
+#form_container input:valid, 
+#form_container textarea:valid{
+    border: 2px solid rgb(63, 164, 49);
+    box-shadow: 0 0 20px 0 rgba(40, 164, 63, 0.397), 0 5px 5px 0 rgba(26, 137, 54, 0.386);
+}
+
+#form_container input:invalid, 
+#form_container textarea:invalid{
+    border: 2px solid rgb(188, 113, 113);
+}
 
 
 
@@ -161,8 +289,11 @@ nav ul li a{
     }
 
     nav>h1{
+        position: relative;
         font-size: 35px;
-        margin-bottom:1%;
+        padding-top: 25px;
+        margin-bottom:2%;
+        left: 10px;
         margin-left: 0 auto;
     }
 
@@ -178,10 +309,35 @@ nav ul li a{
     #about_container{
         display: flex;
         flex-direction: column-reverse;
-       height: 100%;
+        height: auto;
     }
     #about_img{
         width: 100%;
      }
 
+    #projects_container{
+        height: 500px;
+        padding-top: 1%;
+        margin: 2px;
+    }
+
+    #projects_title{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .projects_img{
+        background-size: cover;
+        padding-bottom: 250px;
+    }
+
   }
+
+  @media only screen and (max-width: 992px) {
+    #projects_container{
+        height: 750px;
+        padding-top: 100px;
+    }
+
+  }
+
