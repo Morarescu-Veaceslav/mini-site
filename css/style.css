@@ -133,7 +133,7 @@ nav ul li a{
     font-weight: normal;
     font-style: italic;
     text-shadow: 2px 2px 4px #777575;
-    border-bottom: 2px solid rgb(29, 176, 159);
+    border-bottom: 1px solid #777575;
     margin:0px 20px;
 }
 
@@ -160,12 +160,16 @@ nav ul li a{
     width: 300px;
     height: auto;
     margin: 15px;
-    line-height: 50px;
-    font-size: 25px;
+    
+}
+
+#projects_title>h1{
+    font-size: 50px;
     font-weight: normal;
     font-style: italic;
     text-shadow: 2px 2px 4px #777575;
 }
+
 
 .projects_img{
     width: 300px;
@@ -268,7 +272,7 @@ nav ul li a{
 
 #form_container input:invalid, 
 #form_container textarea:invalid{
-    border: 2px solid rgb(188, 113, 113);
+    border: 2px solid rgb(243, 180, 180);
 }
 
 
@@ -330,6 +334,27 @@ nav ul li a{
         background-size: cover;
         padding-bottom: 250px;
     }
+
+    #form{
+        margin-top: 500px;
+    }
+    #form_container{
+        width: 700px;
+        height: auto;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    #form_container input,
+    #form_container textarea,
+    #form_container button {
+        width: 70%;
+        margin-left: 70px;
+        resize: none;
+        text-align: center;
+} 
+    
 
   }
 
