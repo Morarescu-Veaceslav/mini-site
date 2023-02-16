@@ -453,7 +453,7 @@ color: white;
     }
 
     #clients{
-        position: absolute;
+        position: fixed;
         width: 350px;
         height: 300px;
         margin-left: 900px;
