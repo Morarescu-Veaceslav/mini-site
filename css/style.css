@@ -453,10 +453,10 @@ color: white;
     }
 
     #clients{
-        position: fixed;
+        position: absolute;
         width: 350px;
         height: 300px;
-        margin-left: 900px;
+        margin:auto;
         margin-top:600px ;
         padding: 10px;
     }
